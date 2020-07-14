@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-size: 175%;
+}
+
+.row {
+    position: relative;
+    top: 50%;
+    height: 50%;
+    width: 100%;
+}
+
+
+.col-lg-4 div {
+    position: relative;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    width: 90%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    background-color: rgb(150, 153, 158);
+    padding: 0px;
+    overflow: auto;
+}
+
+#titulo1 {
+    background-color: rgb(49, 153, 89);
+    color: white;
+}
+
+#titulo2 {
+    background-color: rgba(255, 132, 110, 0.733);
+    color: white;
+}
+
+#titulo3 {
+    background-color: rgb(5, 133, 133);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1em;
+}
+
+h2 {
+    padding: 2px 1em;
+    margin: 0px;
+    display: inline-block;
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    top: auto;
+    background-color: yellow;
+    font-size: .75em;
+}
+
+p {
+    margin: 1em;
+    margin-top: 2.5em;
+    font-size: .5em;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+    }
+    .col-lg-4 {
+        width: 33%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .col-md-12 div {
+        width: 95%;
+    }
+}
